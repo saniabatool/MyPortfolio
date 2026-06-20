@@ -9,6 +9,10 @@ import resumePdf from './assets/resume.pdf';
 import aiProposalImage from './assets/ai-proposal.png';
 import cvGeneratorImage from './assets/cv-generator.png';
 import portfolioImage from './assets/portfolio.png';
+import karbalaImage from './assets/karbala.png';
+import walknwearImage from './assets/walknwear.png';
+import aimfitImage from './assets/aimfit.png';
+
 
 // Custom CSS for the animations
 const styles = `
@@ -378,28 +382,10 @@ const Education = () => {
                 <div className="space-y-10">
                     {/* Bachelors Section */}
                     <div className="bg-white p-8 rounded-3xl shadow-lg border-l-4 border-[#FF7F00]">
-                        <h2 className="text-3xl font-bold text-[#000000] mb-2">Bachelor of Science in Software Engineering</h2>
+                        <h2 className="text-3xl font-bold text-[#000000] mb-2">Bachelor of Engineering in Software Engineering</h2>
                         <p className="text-lg font-medium text-gray-600 mb-4">QUEST Nawabshah 2024-Present</p>
                         <p className="text-gray-700">
                            I’m currently pursuing a bachelor’s degree in Software Engineering. This program has given me a solid foundation in computer science, software development, and practical skills like coding, problem-solving, and project management.
-                        </p>
-                    </div>
-
-                    {/* Intermediate Section */}
-                    <div className="bg-white p-8 rounded-3xl shadow-lg border-l-4 border-[#FF7F00]">
-                        <h2 className="text-3xl font-bold text-[#000000] mb-2">Intermediate</h2>
-                        <p className="text-lg font-medium text-gray-600 mb-4">Govt Degree College 2020-2022</p>
-                        <p className="text-gray-700">
-                            I completed my intermediate studies in Pre-Engineering with high marks, which gave me a strong understanding of core subjects and prepared me well for my bachelor's in Software Engineering.
-                        </p>
-                    </div>
-
-                    {/* Matriculation Section */}
-                    <div className="bg-white p-8 rounded-3xl shadow-lg border-l-4 border-[#FF7F00]">
-                        <h2 className="text-3xl font-bold text-[#000000] mb-2">Matriculation</h2>
-                        <p className="text-lg font-medium text-gray-600 mb-4">HM Khoja School  - 2020</p>
-                        <p className="text-gray-700">
-                            I successfully completed my matriculation with 3rd position in the Nawabshah Board, showing strong academic discipline and a passion for learning from an early stage.
                         </p>
                     </div>
                 </div>
@@ -431,23 +417,10 @@ const Experience = () => {
                     <div className="bg-white p-8 rounded-3xl shadow-lg border-l-4 border-[#FF7F00]">
                         <h2 className="text-3xl font-bold text-[#000000] mb-2">Junior Web Developer</h2>
                         <p className="text-lg font-medium text-gray-600 mb-2">iCreativez · Part-time</p>
-                        <p className="text-gray-500 mb-4">2025 - Present · 8 mos</p>
+                        <p className="text-gray-500 mb-4">Jan 2025 - Dec 2025</p>
                         <p className="text-gray-700">
                             Key Skills:
                             <span className="inline-block bg-[#D1D5DB] text-[#000000] text-sm font-semibold px-2 py-1 rounded-full ml-2">MERN Stack</span>
-                        </p>
-                    </div>
-
-                    {/* Intern Section */}
-                    <div className="bg-white p-8 rounded-3xl shadow-lg border-l-4 border-[#FF7F00]">
-                        <h2 className="text-3xl font-bold text-[#000000] mb-2">Intern</h2>
-                        <p className="text-lg font-medium text-gray-600 mb-2">iCreativez Technologies Nawabshah · Part-time</p>
-                        <p className="text-gray-500 mb-4">Jan 2025 - Feb 2025 · 2 mos · On-site</p>
-                        <p className="text-gray-700">
-                            Key Skills:
-                            <span className="inline-block bg-[#D1D5DB] text-[#000000] text-sm font-semibold px-2 py-1 rounded-full ml-2">HTML5</span>
-                            <span className="inline-block bg-[#D1D5DB] text-[#000000] text-sm font-semibold px-2 py-1 rounded-full ml-2">CSS</span>
-                            <span className="inline-block bg-[#D1D5DB] text-[#000000] text-sm font-semibold px-2 py-1 rounded-full ml-2">Javascript</span>
                         </p>
                     </div>
                 </div>
@@ -462,24 +435,31 @@ const Experience = () => {
 const Projects = () => {
   const projects = [
     {
-      title: "AI Proposal Writer",
-      description: "A web application that leverages AI to assist users in writing professional and effective proposals.",
-      link: "https://ai-proposal-writer-bysania.netlify.app/",
-      image:aiProposalImage,
-      
-    },
-    {
-      title: "CV Generator",
-      description: "An intuitive web tool that helps users create and customize their resumes and CVs with ease.",
-      link: "https://cvgenerat.netlify.app/",
-      image: cvGeneratorImage,
-      
-    },
-    {
       title: "Waseema's Portfolio",
       description: "A modern and responsive personal portfolio website showcasing the skills and projects of Waseema.",
       link: "https://saniabatool.github.io/waseema-s-portfolio/",
        image: portfolioImage,
+     
+    },
+    {
+      title: "What is Karbala",
+      description: "An educational platform dedicated to helping people understand the history, significance and lessons of Karbala.",
+      link: "https://whatiskarbala.netlify.app/",
+       image: karbalaImage,
+     
+    },
+    {
+      title: "Aimfit Clone",
+      description: "AimFit is a premier, women-only health and fitness platform based in Pakistan.",
+      link: "https://aimfit-clone.netlify.app/",
+       image: aimfitImage,
+     
+    },
+    {
+      title: "Walk n Wear",
+      description: "Walk n Wear is an everyday footwear brand designed specifically for the modern woman",
+      link: "https://walknwearr.netlify.app/",
+       image: walknwearImage,
      
     },
   ];
@@ -535,19 +515,16 @@ const Projects = () => {
  */
 const TechStack = () => {
     const techStackItems = [
-        { name: "React", icon: "⚛️", description: "A JavaScript library for building user interfaces." },
-        { name: "JavaScript", icon: "📜", description: "A high-level, interpreted programming language." },
         { name: "HTML5", icon: "🌐", description: "The latest version of the Hypertext Markup Language." },
         { name: "CSS3", icon: "🎨", description: "A style sheet language used for describing the presentation of a document." },
+        { name: "JavaScript", icon: "📜", description: "A high-level, interpreted programming language." },
         { name: "Tailwind CSS", icon: "💨", description: "A utility-first CSS framework for rapidly building custom designs." },
         { name: "Bootstrap", icon: "🅱️", description: "A popular CSS framework for developing responsive and mobile-first websites." },
+        { name: "React", icon: "⚛️", description: "A JavaScript library for building user interfaces." },
         { name: "Node.js", icon: "🟢", description: "A JavaScript runtime built on Chrome's V8 engine for building scalable network applications." },
         { name: "Express", icon: "🚀", description: "A minimal and flexible Node.js web application framework." },
-        { name: "C", icon: "💻", description: "A general-purpose, procedural computer programming language." },
-        { name: "C++", icon: "⚙️", description: "An extension of the C language with object-oriented features." },
-        { name: "Java", icon: "☕", description: "A high-level, class-based, object-oriented programming language." },
-    ];
-
+       { name: "MongoDB", icon: "🍃",description: "A popular NoSQL database for modern web applications."},
+    ]
     return (
         <section className="relative pt-24 min-h-screen flex items-center justify-center bg-[#F4F7FB] overflow-hidden">
             {/* Animated shapes in the background of the Tech Stack page */}
@@ -739,7 +716,7 @@ const Footer = () => {
 
                     {/* Gmail */}
                     <a
-                        href="mailto:saniabatoolabro14@gmail.com"
+                        href="mailto:saniaabatool110@gmail.com"
                         className="text-white hover:text-[#FF7F00] transition-colors duration-300"
                     >
                         <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 512 512">
